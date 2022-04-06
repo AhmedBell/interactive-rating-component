@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Interactive rating component</title>
 
@@ -18,46 +19,62 @@
 <body>
 
   <!-- Rating state start -->
-  <div class="container">
+  <div id="ratingCard" >
    
-        <table>
-        <tr><td> <div id="icon" class="rounded"> <img src="images/icon-star.svg" alt="star icon"></div> </td></tr>
-        <tr><td> <h1>How did we do? </h1></td></tr>
+        
+        <div id="icon" class="rounded">
+           <img src="images/icon-star.svg" alt="star icon">
+        </div> 
 
-        <tr><td><p>  Please let us know how we did with your support request. All feedback is appreciated
-          to help us improve our offering!</p> </td></tr>
+        <div class="cardText"> 
+            <h1>How did we do? </h1>
+            <p>  Please let us know how we did with your support request. All feedback is appreciated
+            to help us improve our offering!</p>
+        </div> 
 
-        <tr><td> <div class="btn-group">
+         <div class="btn-group">
          <button class="ratingB"> 1 </button>
          <button class="ratingB"> 2 </button>
          <button class="ratingB"> 3 </button>
          <button class="ratingB"> 4 </button>
          <button class="ratingB"> 5 </button>
-        </td></tr>
         </div>
 
-        <tr><td> <button class="submit"> Submit </button></td></tr>
-        </table>
+         <div class="submitBtn"><button class="submit"> Submit </button></div>
+        
       
 </div>
 
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
+  <div id="thankYou" class="hide" >
 
- <!-- You selected  Add rating here  out of 5-->
+      <div id="thanksImage">
+          <img src="images/illustration-thank-you.svg" alt="Thank You!"> 
+      </div>
 
- <!--  Thank you!
+      <div id="selectedRating">
+          <span> <p> You selected  4  out of 5 </p></span>
+      </div>
+      <div class="thankYouText">
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
+          <h2>Thank you!</h2>
 
-  Thank you state end -->
+          <p> We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!
+          </p>
+
+      </div>
+
+ <!--Thank you state end --> 
+
+  </div>
 
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Ahmed Bellarbi</a>.
   </div>
 </body>
 </html>

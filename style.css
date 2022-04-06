@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 :root {
 
     /* Primary colors */
@@ -9,7 +14,7 @@
 
     --white: hsl(0, 0%, 100%);
     --lightGrey: hsl(217, 12%, 63%);
-    --mediumGrey: hsl(217, 10%, 26%);
+    --mediumGrey: hsl(217, 10%, 22%);
     --darkBlue: hsl(213, 19%, 18%);
     --veryDarkBlue: hsl(216, 12%, 8%);
    
@@ -30,53 +35,80 @@ body{
     width: 100%;
     min-height: 100vh;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--veryDarkBlue);
     overflow-x: hidden;
    
 }
 
-.container{
-    width: 25%;
+#ratingCard , #thankYou{
+    width: 420px;
     max-width: 1080px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-color: var(--darkBlue);
-    border-radius: 15px;
+    border-radius: 30px;
     overflow: hidden;
+    padding-bottom: 35px;
     }
 
-    table{
-        margin: 20px;
-    }
-    table p{
-        color: var(--white);
-        font-size: 21px;
-    }
-    table td {
-        padding: 5px;
+  
+   
+    #icon {
+        margin: 30px;
+        display: flex;
         align-items: center;
-      
+        justify-content: center;
     }
+
+    .cardText{
+        margin: 30px;
+    }
+    .cardText h1{
+        margin-bottom: 10px;
+        color: var(--white);
+        font-family: var(--first-font);
+        font-weight: 700;
+    }
+    .cardText p {
+        margin-bottom: 15px;
+        font-family: var(--first-font);
+        font-weight: 400;
+        color: var(--lightGrey);
+    }
+
+
     .btn-group{
         width: 100%;
-        align-items: center;
         display: block;
-        margin-left: 15px;
+        text-align: center;
+        margin-left: 10px;
+        margin-bottom: 30px;
+       
+        
 
     }
     .ratingB{
-        display: inline-block;
+        display: -ms-inline-grid;
         border-radius: 50%;
         width: 50px;
         height: 50px;
         background-color: var(--mediumGrey);
-        margin-right: 15px;
         border: none;
         font-size: 17px;
-        color: var(--white);
+        color: var(--lightGrey);
+        margin-right: 20px;
     }
+    .ratingB:hover{
+        color: var(--white);
+        background-color: var(--orange);
+        cursor: pointer;
+    }
+    .ratingB:active{
+        color: var(--white);
+        background-color: var(--lightGrey);
+    }
+   
 
     .rounded  {
         display: inline-block;
@@ -86,33 +118,82 @@ body{
         background-color: var(--mediumGrey);
         margin-right: 10px;
     }
-    #icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
 
 
     .submit {
+        height: 3rem;
+        width: 85%;
+        padding: 5px;
+        margin: auto;
         outline: none;
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         box-sizing: border-box;
-        max-height: 2em;
-        height: 2em;
-        max-width: 9em;
-        width: 9em;
-        font-size: 1.5em;
+        font-size: 15px;
+        letter-spacing: 2px;
         text-transform:uppercase;
-        font-weight: 300;
+        font-family: var(--first-font);
+        color: var(--white);
+        font-weight: 400;
         border: none;
-        border-radius: 1.5em;
+        border-radius: 2em;
         background: var(--orange);
         overflow: hidden;
         transition: transform 400ms;
       }
+      .submit:hover{
+          color: var(--orange);
+          background-color: var(--white);
+          cursor: pointer;
+      }
+
+      #thanksImage{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 40px auto;
+          
+      }
+      #selectedRating{
+          margin: auto;
+          padding: 10px 20px 5px 20px;
+          border-radius: 20px;
+          width: max-content;
+          text-align: center;
+          color: var(--orange);
+          font-family: var(--first-font);
+          background-color: var(--mediumGrey);
+          font-weight: lighter;
+          margin-bottom: 40px;
+      }
+      .thankYouText{
+          text-align: center;
+          margin: 20px;
+          padding: 10px;
+          font-family: var(--first-font);
+          color: var(--lightGrey);
+          line-height: 1.5;
+          
+          
+      }
+      .thankYouText h2 {
+          font-size: 30px;
+          margin-bottom: 20px;
+          color: var(--white);
+        
+      }
+
+      .hide{
+          display: none;
+      }
 
 
+      
+
+.attribution{
+    position: absolute;
+    bottom: 0px;
+}
 
