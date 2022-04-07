@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
   
   <title>Frontend Mentor | Interactive rating component</title>
 
@@ -19,7 +20,7 @@
 <body>
 
   <!-- Rating state start -->
-  <div id="ratingCard" >
+  <div id="ratingCard">
    
         
         <div id="icon" class="rounded">
@@ -33,14 +34,14 @@
         </div> 
 
          <div class="btn-group">
-         <button class="ratingB"> 1 </button>
+         <button class="ratingB" > 1 </button>
          <button class="ratingB"> 2 </button>
          <button class="ratingB"> 3 </button>
          <button class="ratingB"> 4 </button>
          <button class="ratingB"> 5 </button>
         </div>
 
-         <div class="submitBtn"><button class="submit"> Submit </button></div>
+         <div class="submitBtn" id="subtn"><button class="submit"> Submit </button></div>
         
       
 </div>
@@ -55,7 +56,7 @@
       </div>
 
       <div id="selectedRating">
-          <span> <p> You selected  4  out of 5 </p></span>
+          <span> <p> You selected  <span id="value"></span>  out of 5 </p></span>
       </div>
       <div class="thankYouText">
 

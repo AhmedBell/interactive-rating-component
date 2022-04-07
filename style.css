@@ -98,16 +98,22 @@ body{
         font-size: 17px;
         color: var(--lightGrey);
         margin-right: 20px;
+        transition: 200ms ease-in-out;
+       
     }
     .ratingB:hover{
         color: var(--white);
         background-color: var(--orange);
         cursor: pointer;
+        
     }
     .ratingB:active{
         color: var(--white);
         background-color: var(--lightGrey);
+    
+       
     }
+   
    
 
     .rounded  {
@@ -147,6 +153,7 @@ body{
           color: var(--orange);
           background-color: var(--white);
           cursor: pointer;
+          transition: 200ms ease-in-out;
       }
 
       #thanksImage{
